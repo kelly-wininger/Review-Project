@@ -1,0 +1,331 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Lock the container to exactly 1 full screen */
+.hero-page {
+  width: 100vw;       /* 100% of the viewport width */
+  height: 100vh;      /* 100% of the viewport height */
+  overflow: hidden;   /* Prevents any accidental spillover */
+  position: relative;
+}
+
+/* 3. Force the image to fill the container without distorting */
+.full-screen-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Resizes and crops the image to fill the space perfectly */
+  display: block;     /* Eliminates the default bottom gap caused by inline elements */
+}
+
+/* Styling for the next page just to show the separation */
+.next-page {
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+
+
+
+#hi
+{
+    color: #141414; /* Dark gray color for the "Hi" text */
+    font-size: 2rem; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space below the "Hi" text */
+    text-align: center; /* Center the text */
+}
+
+#hii
+{
+    color: #141414; /* Medium gray color for the "Hii" text */
+
+    text-align: center; /* Center the text */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url('images/aidan-hancock-8RU4OuA6Yug-unsplash.png');
+    background-size: cover;          /* Scales image to fill the screen */
+    background-position: center;     /* Centers the image */
+    background-repeat: no-repeat;    /* Prevents the image from repeating */
+    background-attachment: fixed;    /* Keeps background fixed during scroll */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* This pushes everything below it to the very bottom */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Responsive 4-Column Grid Gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Individual Image Wrapper */
+.gallery-item {
+    position: relative;
+    overflow: hidden; /* Crucial to keep zoomed image bounded */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Forces uniform image card height */
+}
+
+/* The Image Element */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents distorting aspect ratios */
+    transition: transform 0.5s ease; /* Smooth hover transition */
+}
+
+/* Translucent Dark Overlay with Fading Text */
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+}
+
+/* Hover Content Style (Text) */
+.gallery-item .overlay h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transform: translateY(20px); /* Slid slightly downwards initially */
+    transition: transform 0.4s ease;
+}
+
+/* --- TRIGGER THE HOVER EFFECTS --- */
+
+/* 1. Zoom effect on image */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* 2. Fade in the dark overlay container */
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* 3. Slide the text up smoothly when parent is hovered */
+.gallery-item:hover .overlay h3 {
+    transform: translateY(0);
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin: 0 0 8px 0;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive breakpoint for smaller screens */
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form Container */
+.contact-container {
+    background: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.contact-container h2 {
+    color: #333333;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.contact-container p {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+/* Layout and Spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444444;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Inputs and Textarea Elements */
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333333;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allows resizing only vertically */
+}
+
+/* Dynamic Focus Indicator State */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #9b59b6;
+    box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.15);
+}
+
+/* Submit Button Style */
+.submit-btn {
+    width: 100%;
+    background-color: #9b59b6;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+    background-color: #8e44ad;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
