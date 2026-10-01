@@ -1,6 +1,4 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -10,33 +8,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
 
-/* 2. Lock the container to exactly 1 full screen */
-.hero-page {
-  width: 100vw;       /* 100% of the viewport width */
-  height: 100vh;      /* 100% of the viewport height */
-  overflow: hidden;   /* Prevents any accidental spillover */
-  position: relative;
-}
-
-/* 3. Force the image to fill the container without distorting */
-.full-screen-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* Resizes and crops the image to fill the space perfectly */
-  display: block;     /* Eliminates the default bottom gap caused by inline elements */
-}
-
-/* Styling for the next page just to show the separation */
-.next-page {
-  padding: 40px;
-  min-height: 100vh;
-  background-color: #f4f4f4;
-}
 
 .nav-links {
   display: flex;
@@ -55,8 +27,6 @@ body {
 .nav-links a:hover {
   color: #007bff;
 }
-
-
 
 
 #hi
@@ -80,42 +50,20 @@ html, body {
     height: 100%;
 }
 
-body {
-    background-image: url('images/aidan-hancock-8RU4OuA6Yug-unsplash.png');
-    background-size: cover;          /* Scales image to fill the screen */
-    background-position: center;     /* Centers the image */
-    background-repeat: no-repeat;    /* Prevents the image from repeating */
-    background-attachment: fixed;    /* Keeps background fixed during scroll */
-}
-html, body {
-  height: 100%;
-  margin: 0;
-}
 
 body {
   display: flex;
   flex-direction: column;
+     font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+
+    align-items: center;
 }
 
 .content {
   flex: 1; /* This pushes everything below it to the very bottom */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
 
 /* Responsive 4-Column Grid Gallery */
 .gallery-container {
@@ -232,4 +180,12 @@ body {
   .card-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+.img {
+  width: 100vw;       /* 100% of viewport width */
+  height: 100vh;      /* 100% of viewport height */
+  object-fit: cover;  /* Fills the screen while maintaining aspect ratio */
+  display: block;     /* Removes default inline bottom spacing */
 }
